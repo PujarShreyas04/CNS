@@ -33,7 +33,6 @@ def encrypt(text, key):
         ciphertext += (enc)
     return ciphertext
     
-
 def decrypt(ciphertext, key):
     ciphertext = ciphertext.split('0X')[1:]
     ciphertext = [int('0x' + c.lower(), 0) for c in ciphertext]
